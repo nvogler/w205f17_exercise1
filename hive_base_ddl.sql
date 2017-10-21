@@ -97,7 +97,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/Measure.csv';
+	LOCATION '/user/w205/hospital_compare/readmissions.csv';
 
 DROP TABLE EffectiveCare;
 CREATE EXTERNAL TABLE EffectiveCare
@@ -125,7 +125,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/Measure.csv';
+	LOCATION '/user/w205/hospital_compare/effective_care.csv';
 	
 DROP TABLE Measures;
 CREATE EXTERNAL TABLE Measures
