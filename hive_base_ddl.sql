@@ -82,6 +82,7 @@ CREATE EXTERNAL TABLE Readmissions
 	PhoneNumber STRING,
 	MeasureName STRING,
 	MeasureID INT,
+	CompToNation String,
 	Denominator STRING,
 	Score STRING,
 	LowerEstimate STRING,
