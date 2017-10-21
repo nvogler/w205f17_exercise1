@@ -22,7 +22,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 	STORED AS TEXTFILE
 	LOCATION '/user/w205/hospital_compare/';
 
-DROP TABLE SurveysResponses;
+DROP TABLE SurveyResponses;
 CREATE EXTERNAL TABLE SurveyResponses
 (
 	ProviderID INT,
