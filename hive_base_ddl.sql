@@ -1,4 +1,4 @@
-DROP TABLE Hospitals;
+DROP TABLE hospitals;
 CREATE EXTERNAL TABLE Hospitals
 (
 	ProviderID INT,
@@ -20,9 +20,9 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/hospitals.csv';
+	LOCATION '/user/w205/hospital_compare/';
 
-DROP TABLE SurveyResponses;
+DROP TABLE surveys_responses;
 CREATE EXTERNAL TABLE SurveyResponses
 (
 	ProviderID INT,
@@ -67,9 +67,9 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/surveys_responses.csv';
+	LOCATION '/user/w205/hospital_compare/';
 
-DROP TABLE Readmissions;
+DROP TABLE readmissions;
 CREATE EXTERNAL TABLE Readmissions
 (
 	ProviderID INT,
@@ -97,9 +97,9 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/readmissions.csv';
+	LOCATION '/user/w205/hospital_compare/';
 
-DROP TABLE EffectiveCare;
+DROP TABLE effective_care;
 CREATE EXTERNAL TABLE EffectiveCare
 (
 	ProviderID INT,
@@ -125,9 +125,9 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/effective_care.csv';
+	LOCATION '/user/w205/hospital_compare/';
 	
-DROP TABLE Measures;
+DROP TABLE Measure;
 CREATE EXTERNAL TABLE Measures
 (
 	MeasureName STRING,
@@ -144,4 +144,4 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/Measure.csv';
+	LOCATION '/user/w205/hospital_compare/';
