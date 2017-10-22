@@ -1,3 +1,4 @@
+DROP TABLE survey_responses_formatted;
 CREATE TABLE survey_responses_formatted AS
 
 SELECT
@@ -30,5 +31,5 @@ SELECT
 	QuestionY,
 	baseScore,
 	ConsistencyScore
-FROM survey_responses
+FROM surveys_responses;
 

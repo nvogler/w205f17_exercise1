@@ -1,12 +1,15 @@
-CREATE TABLE readmissions_formatted AS
+DROP TABLE readmiissions_formatted;
+CREATE TABLE readmissions_formatted
 
-SELECT
+AS SELECT
+
 	ProviderID,
 	MeasureID,
 	Denominator,
 	Score,
 	LowerEstimate,
 	HigherEstimate,
-	Footnote,
-FROM readmissions
+	Footnote
+
+FROM readmissions;
 

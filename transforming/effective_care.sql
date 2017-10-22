@@ -1,13 +1,14 @@
+DROP TABLE effective_care_formatted;
 CREATE TABLE effective_care_formatted
 
 AS SELECT
 
-	ProviderID INT,
-	Condition STRING,
-	MeasureID INT,
-	Score STRING,
-	Sample STRING,
-	Footnote STRING,
+	ProviderID,
+	Condition,
+	MeasureID,
+	Score,
+	Sample,
+	Footnote
 	
-FROM readmissions
+FROM effective_care;
 
