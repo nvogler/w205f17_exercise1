@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 DROP TABLE hospitals;
 CREATE EXTERNAL TABLE hospitals
-=======
-DROP TABLE Hospitals;
-CREATE EXTERNAL TABLE Hospitals
->>>>>>> 3f71ebfb9a63c26d6519f144408a37ed25408b78
 (
 	ProviderID INT,
 	HospitalName STRING,
@@ -27,13 +22,8 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 	STORED AS TEXTFILE
 	LOCATION '/user/w205/hospital_compare/';
 
-<<<<<<< HEAD
 DROP TABLE surveys_responses;
 CREATE EXTERNAL TABLE surveys_responses
-=======
-DROP TABLE SurveyResponses;
-CREATE EXTERNAL TABLE SurveyResponses
->>>>>>> 3f71ebfb9a63c26d6519f144408a37ed25408b78
 (
 	ProviderID INT,
 	HospitalName STRING,
@@ -79,13 +69,8 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 	STORED AS TEXTFILE
 	LOCATION '/user/w205/hospital_compare/';
 
-<<<<<<< HEAD
 DROP TABLE readmissions;
 CREATE EXTERNAL TABLE readmissions
-=======
-DROP TABLE Readmissions;
-CREATE EXTERNAL TABLE Readmissions
->>>>>>> 3f71ebfb9a63c26d6519f144408a37ed25408b78
 (
 	ProviderID INT,
 	HospitalName STRING,
@@ -97,7 +82,6 @@ CREATE EXTERNAL TABLE Readmissions
 	PhoneNumber STRING,
 	MeasureName STRING,
 	MeasureID INT,
-	CompToNation String,
 	Denominator STRING,
 	Score STRING,
 	LowerEstimate STRING,
@@ -115,13 +99,8 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 	STORED AS TEXTFILE
 	LOCATION '/user/w205/hospital_compare/';
 
-<<<<<<< HEAD
 DROP TABLE effective_care;
 CREATE EXTERNAL TABLE effective_care
-=======
-DROP TABLE EffectiveCare;
-CREATE EXTERNAL TABLE EffectiveCare
->>>>>>> 3f71ebfb9a63c26d6519f144408a37ed25408b78
 (
 	ProviderID INT,
 	HospitalName STRING,
