@@ -1,4 +1,4 @@
-DROP TABLE readmiissions_formatted;
+DROP TABLE readmissions_formatted;
 CREATE TABLE readmissions_formatted
 
 AS SELECT
