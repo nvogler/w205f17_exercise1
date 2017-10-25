@@ -11,7 +11,7 @@ CREATE EXTERNAL TABLE hospitals
 	PhoneNumber STRING,
 	HospitalType STRING,
 	HospitalOwnership STRING,
-	EmergencyServices BOOLEAN
+	EmergencyServices STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 	WITH SERDEPROPERTIES (
@@ -30,7 +30,7 @@ CREATE EXTERNAL TABLE surveys_responses
 	Address STRING,
 	City STRING,
 	State STRING,
-	ZipCode INT,
+	ZipCode STRING,
 	CountyName STRING,
 	QuestionA STRING,
 	QuestionB STRING,
@@ -57,8 +57,8 @@ CREATE EXTERNAL TABLE surveys_responses
 	QuestionW STRING,
 	QuestionX STRING,
 	QuestionY STRING,
-	baseScore INT,
-	ConsistencyScore INT
+	baseScore STRING,
+	ConsistencyScore STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 	WITH SERDEPROPERTIES (
