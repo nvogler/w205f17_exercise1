@@ -130,7 +130,7 @@ DROP TABLE Measures;
 CREATE EXTERNAL TABLE Measures
 (
 	MeasureName STRING,
-	MeasureID INT,
+	MeasureID STRING,
 	MeasureStartQuarter STRING,
 	MeasureStartDate STRING,
 	MeasureEndQuarter STRING,

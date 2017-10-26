@@ -3,13 +3,15 @@ CREATE TABLE readmissions_formatted
 
 AS SELECT
 
-	ProviderID,
+	CAST(ProviderID AS INT),
 	MeasureID,
 	Denominator,
-	Score,
-	LowerEstimate,
-	HigherEstimate,
+	CAST(Score AS DOUBLE),
+	CAST(LowerEstimate AS DOUBLE),
+	CAST(HigherEstimate AS DOUBLE),
 	Footnote
 
-FROM readmissions;
+FROM readmissions
 
+WHERE
+	Score <> 'Not Available'

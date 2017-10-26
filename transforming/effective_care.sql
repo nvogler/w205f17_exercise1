@@ -3,10 +3,10 @@ CREATE TABLE effective_care_formatted
 
 AS SELECT
 
-	ProviderID,
+	CAST(ProviderID AS INT),
 	Condition,
 	MeasureID,
-	Score,
+	CAST(Score AS INT),
 	Sample,
 	Footnote
 	
