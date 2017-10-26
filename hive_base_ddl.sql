@@ -56,7 +56,6 @@ CREATE EXTERNAL TABLE surveys_responses
 	QuestionV STRING,
 	QuestionW STRING,
 	QuestionX STRING,
-	QuestionY STRING,
 	baseScore STRING,
 	ConsistencyScore STRING
 )
