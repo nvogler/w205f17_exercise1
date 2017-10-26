@@ -10,11 +10,11 @@ AS SELECT
 	Sample,
 	Footnote
 	
+FROM effective_care
+
 WHERE
 	
 	MeasureID <> 'EDV'
 AND
-	Score <> 'Not Available'
-	
-FROM effective_care;
+	Score <> 'Not Available';
 
