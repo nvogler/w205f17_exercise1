@@ -15,3 +15,7 @@ FROM readmissions
 
 WHERE
 	Score <> 'Not Available'
+AND 
+	HigherEstimate <> 'Not Available'
+AND
+	LowerEstimate <> 'Not Available';

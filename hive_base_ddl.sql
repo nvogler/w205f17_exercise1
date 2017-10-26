@@ -80,7 +80,7 @@ CREATE EXTERNAL TABLE readmissions
 	CountyName STRING,
 	PhoneNumber STRING,
 	MeasureName STRING,
-	MeasureID INT,
+	MeasureID STRING,
 	Denominator STRING,
 	Score STRING,
 	LowerEstimate STRING,
