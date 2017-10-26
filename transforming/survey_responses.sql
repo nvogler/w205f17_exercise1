@@ -2,9 +2,9 @@ DROP TABLE survey_responses_formatted;
 CREATE TABLE survey_responses_formatted AS
 
 SELECT
-	ProviderID,
-	baseScore,
-	ConsistencyScore
+	CAST(ProviderID AS INT),
+	CAST(baseScore AS INT),
+	CAST(ConsistencyScore AS INT),
 FROM surveys_responses
 
 WHERE
