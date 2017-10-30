@@ -4,7 +4,7 @@ CREATE TABLE survey_responses_formatted AS
 SELECT
 	CAST(ProviderID AS INT),
 	CAST(baseScore AS INT),
-	CAST(ConsistencyScore AS INT),
+	CAST(ConsistencyScore AS INT)
 FROM surveys_responses
 
 WHERE
