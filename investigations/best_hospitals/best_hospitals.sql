@@ -1,5 +1,5 @@
 -- Desired output: ProviderID, average of (average score - standard deviation), aggregate, average, and standard deviation for each measure
-SELECT ProviderID, avg(AMS) AS overall_avg, stddev_samp(AMS) as stddev_avg, sum(AMS) AS sumavg
+SELECT ProviderID, avg(AMS) - stddev_samp(AMS) AS overall_score, stddev_samp(AMS) as stddev_avg, sum(AMS) AS sumavg
 FROM
 	(
 		-- Calculate standard deviation and average score for each providerid, measureid tuple
@@ -37,4 +37,4 @@ FROM
 		GROUP BY avgs.providerid, avgs.measureid
 	) subResult
 GROUP BY ProviderID
-ORDER BY overall_avg DESC LIMIT 10;
+ORDER BY overall_score DESC LIMIT 10;
