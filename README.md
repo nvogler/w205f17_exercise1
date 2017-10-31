@@ -1,7 +1,7 @@
 # Data Storage and Retrieval
 ## MIDS w205 Fall 2017 Exercise 1
 ## Requirements
-All the required software is installed on the Amazon Web Services Community AMI below.
+All the required software is installed on the Amazon Web Services Community AMI below.  
 AMI ID: AMIID | AMI Name: AMIName
 
 ### Summary
