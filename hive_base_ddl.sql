@@ -20,7 +20,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/';
+	LOCATION '/user/w205/hospital_compare/hospitals/';
 
 DROP TABLE surveys_responses;
 CREATE EXTERNAL TABLE surveys_responses
@@ -66,7 +66,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/';
+	LOCATION '/user/w205/hospital_compare/surveys_responses/';
 
 DROP TABLE readmissions;
 CREATE EXTERNAL TABLE readmissions
@@ -96,7 +96,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/';
+	LOCATION '/user/w205/hospital_compare/readmissions/';
 
 DROP TABLE effective_care;
 CREATE EXTERNAL TABLE effective_care
@@ -124,7 +124,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/';
+	LOCATION '/user/w205/hospital_compare/effective_care/';
 	
 DROP TABLE Measures;
 CREATE EXTERNAL TABLE Measures
@@ -143,4 +143,4 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/';
+	LOCATION '/user/w205/hospital_compare/measures/';
