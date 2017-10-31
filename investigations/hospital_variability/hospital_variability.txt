@@ -1,0 +1,5 @@
+Procedures with the greatest variability between hospitals were found by grouping all scores according to both their provider id and their measure id. That is,  calculating the variance between all scores associated with a specific (providerid, measureid) pair. Then, the variance within each of these subgroups is calculated and ordered before the final result is displayed. This approach directly addresses variability in measures between different hospitals by grouping the scores in that shape before performing calculations.
+
+Records with NULL or unavailable data were excluded as they are unable to contribute to the analysis.
+
+Given this approach, the ten measures with the most variability between hospitals are:

@@ -1,0 +1,5 @@
+An average of the sum of the base score and the consistency score for each response was taken to determine a survey response score. This allows both fields to be accounted for equally withing a single response score. 
+
+Results from the first and third questions, and the approaches used to calculate them, were used to find their correlation with survey responses. Between high-quality care and survey responses there is only a XYZ correlation indicating a weak, inverse relationship.
+
+Records with NULL or unavailable data were excluded as they are unable to contribute to the analysis.

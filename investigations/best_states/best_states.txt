@@ -1,0 +1,5 @@
+To determine the best states as models of high-quality care, the same method is used as was used in determining model hospitals. To reiterate, high-quality care is determined by the average of the the average score per measure, minus the associated standard deviation. Average and standard deviation values per measure, per state are calculated separately, then standard deviation is subtracted from the average, and the average of this value across all measures pertaining to a specific state is taken. This approach accounts for all individual procedures carried out by each hospital and weights each score equally. By subtracting the standard deviation from the average scores, inconsistency among measures is highlighted and taken into account.
+
+Records with NULL or unavailable data were excluded as they are unable to contribute to the analysis.
+
+Given this approach, the ten best state examples of high-quality care are:
