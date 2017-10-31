@@ -1,0 +1,5 @@
+High-quality care is determined by the average (mean) of the the average (mean) score per measure, minus the associated standard deviation. Average and standard deviation values per measure, per hospital are calculated separately, then standard deviation is subtracted from the average, and the average of this value across all measures pertaining to a specific hospital is taken. This approach accounts for all individual procedures carried out by each hospital and weights each score equally. By subtracting the standard deviation from the average scores, inconsistency among measures is highlighted and taken into account.
+
+Further, only hospitals that have carried out more than ten distinct features are considered. The question being asked mentions a 'variety' of procedures. By that definition a hospital with great scores for a few procedures is not a model of high-quality. Records with NULL or unavailable data were excluded as they are unable to contribute to the analysis.
+
+Given this approach, the ten best hospital examples of high-quality care are:
