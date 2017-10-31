@@ -1,5 +1,5 @@
-DROP TABLE readmissions_formatted;
-CREATE TABLE readmissions_formatted
+DROP TABLE readmissions_f;
+CREATE TABLE readmissions_f
 
 AS SELECT
 

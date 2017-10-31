@@ -1,5 +1,5 @@
-DROP TABLE hospitals_formatted;
-CREATE TABLE hospitals_formatted
+DROP TABLE hospitals_f;
+CREATE TABLE hospitals_f
 
 AS SELECT
 
