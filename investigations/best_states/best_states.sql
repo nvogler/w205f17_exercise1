@@ -1,8 +1,8 @@
-SELECT state, avg(AMS) - avg(VAR) AS tot, avg(AMS) AS avrg,  avg(VAR) as avar, sum(AMS) AS sumavg
+SELECT state, avg(AMS) - stddev_samp(AMS) AS overall_score, stddev_samp(AMS) AS stddev_avg, avg(AMS) AS avgavg, sum(AMS) AS sumavg
 FROM
 	(
-		-- Calculate standard deviation and average score for each providerid, measureid tuple
-		SELECT state, measureid, stddev_samp(score) AS VAR, avg(score) AS AMS
+		-- Calculate average score for each providerid, measureid tuple
+		SELECT state, measureid, avg(score) AS AMS
 		FROM
 			(
 			-- Appending state column to providerid|measureid|score
@@ -24,4 +24,4 @@ FROM
 		GROUP BY states.state, avgs.measureid
 	) subResult
 GROUP BY state
-ORDER BY tot DESC LIMIT 10;
+ORDER BY overall_score DESC LIMIT 10;
