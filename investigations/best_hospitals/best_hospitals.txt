@@ -3,3 +3,15 @@ High-quality care is determined by the average (mean) of the the average (mean) 
 Further, only hospitals that have carried out more than ten distinct features are considered. The question being asked mentions a 'variety' of procedures. By that definition a hospital with great scores for a few procedures is not a model of high-quality. Records with NULL or unavailable data were excluded as they are unable to contribute to the analysis.
 
 Given this approach, the ten best hospital examples of high-quality care are:
+
+ProviderID    Overall Score           Std Dev (variation)     Sum
+330270        4196.434057160408       1787.5659428395923      11968.0
+50769         1349.6840199912128      946.8159800087872       4593.0
+370222        1230.4840558849628      807.5159441150373       4076.0
+30131         1087.2100653740167      337.28993462598316      2849.0
+40147         997.1074682695754       566.3925317304246       3127.0
+360266        992.3744955743342       480.1255044256658       2945.0
+450804        884.6486655540294       253.85133444597056      2277.0
+450864        808.8812049733821       51.61879502661797       1721.0
+370210        798.3755415948608       360.62445840513925      2318.0
+340153        739.6242789363899       335.87572106361006      2151.0
