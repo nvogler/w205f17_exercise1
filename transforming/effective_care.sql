@@ -15,6 +15,8 @@ FROM effective_care
 WHERE
 	
 	MeasureID <> 'EDV'
-OR
+AND
 	Score <> 'Not Available';
+AND 
+	ProviderID IS NOT NULL;
 

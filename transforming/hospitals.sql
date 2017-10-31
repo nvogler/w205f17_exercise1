@@ -15,4 +15,5 @@ AS SELECT
 	HospitalOwnership,
 	EmergencyServices
 
-FROM hospitals;
+FROM hospitals
+WHERE ProviderID IS NOT NULL;

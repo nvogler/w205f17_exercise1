@@ -11,4 +11,6 @@ WHERE
 	baseScore <> 'Not Available'
 AND
 	ConsistencyScore <> 'Not Available';
+AND 
+	ProviderID IS NOT NULL;
 
