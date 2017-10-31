@@ -1,19 +1,11 @@
-DROP TABLE hospitals_f;
+DROP TABLE hospitals_f;			-- _f indicating transFormed table
 CREATE TABLE hospitals_f
 
-AS SELECT
+AS SELECT				-- Only selecting columns to be used in analysis as shown in the ERD
 
 	CAST(ProviderID AS INT),
-	HospitalName,
-	Address,
-	City,
-	State,
-	ZipCode,
-	CountyName,
-	PhoneNumber,
-	HospitalType,
-	HospitalOwnership,
-	EmergencyServices
+	State
+	
+FROM hospitals				-- Pulling from raw data (with schema applied)
 
-FROM hospitals
-WHERE ProviderID IS NOT NULL;
+WHERE ProviderID IS NOT NULL;		-- Ignoring records with null values as they can't be used 
