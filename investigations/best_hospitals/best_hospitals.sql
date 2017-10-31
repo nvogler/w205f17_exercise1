@@ -37,4 +37,4 @@ FROM
 		GROUP BY avgs.providerid, avgs.measureid
 	) subResult
 GROUP BY ProviderID
-ORDER BY tot DESC LIMIT 10;
+ORDER BY overall_avg DESC LIMIT 10;
