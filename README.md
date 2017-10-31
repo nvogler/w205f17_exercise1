@@ -1,5 +1,8 @@
 # Data Storage and Retrieval
 ## MIDS w205 Fall 2017 Exercise 1
+## Requirements
+All the required software is installed on the Amazon Web Services Community AMI below.
+AMI ID: AMIID | AMI Name: AMIName
 
 ### Summary
 This exercise replicates the task of conducting a study on the quality of care for Medicare patients. Work is broken down into the following four segments with the end goal of strengthening the connection between the analysis, storage, modeling, and processing of data. 
