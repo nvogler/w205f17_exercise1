@@ -7,7 +7,7 @@ AMI ID: AMIID | AMI Name: AMIName
 ### Summary
 This exercise replicates the task of conducting a study on the quality of care for Medicare patients. Work is broken down into the following four segments with the end goal of strengthening the connection between the analysis, storage, modeling, and processing of data. 
 
-- Loading data into a Hadoop File System (HDFS) Data Lake
+- Loading data into a Hadoop Distributed File System (HDFS) Data Lake
 - Creating an Entity-Relationship (ER) diagram and schema for the data being analyzed
 - Transforming raw data form the data lake to fit the data model
 - Analyzing dervied data to answer questions about quality of care
