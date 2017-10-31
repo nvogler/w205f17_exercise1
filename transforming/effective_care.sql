@@ -5,7 +5,7 @@ AS SELECT				-- Only selecting columns to be used in analysis as shown in the ER
 	
 	CAST(ProviderID AS INT),
 	MeasureID,
-	CAST(Score AS INT),
+	CAST(Score AS INT)
 	
 FROM effective_care			-- Pulling from raw data (with schema applied)
 
