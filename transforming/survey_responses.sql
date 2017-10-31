@@ -10,7 +10,6 @@ FROM surveys_responses
 WHERE
 	baseScore <> 'Not Available'
 AND
-	ConsistencyScore <> 'Not Available';
+	ConsistencyScore <> 'Not Available'
 AND 
 	ProviderID IS NOT NULL;
-

@@ -16,7 +16,7 @@ WHERE
 	
 	MeasureID <> 'EDV'
 AND
-	Score <> 'Not Available';
+	Score <> 'Not Available'
 AND 
 	ProviderID IS NOT NULL;
 
