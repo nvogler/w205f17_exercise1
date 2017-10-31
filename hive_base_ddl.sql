@@ -1,7 +1,7 @@
-DROP TABLE hospitals;
+DROP TABLE hospitals;							-- Applying schema for loading from the Data Lake
 CREATE EXTERNAL TABLE hospitals
 (
-	ProviderID INT,
+	ProviderID INT,							-- Including all columns
 	HospitalName STRING,
 	Address STRING,
 	City STRING,
@@ -20,7 +20,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 		"escapeChar" = '\\'
 		)
 	STORED AS TEXTFILE
-	LOCATION '/user/w205/hospital_compare/hospitals/';
+	LOCATION '/user/w205/hospital_compare/hospitals/';		-- Path to hospital.csv's folder
 
 DROP TABLE surveys_responses;
 CREATE EXTERNAL TABLE surveys_responses
