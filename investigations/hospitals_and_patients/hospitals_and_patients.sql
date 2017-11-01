@@ -1,5 +1,5 @@
 -- Desired output: Correlation coefficient between survey_responses and high quality care
-SELECT corr(results.avrg, sr.AvgBS)
+SELECT corr(results.overall_score, sr.AvgBS)
 FROM 
 	(
 		-- Average base + consistency scores for each provider
@@ -10,11 +10,11 @@ FROM
 	INNER JOIN
 	(
 		-- Calculate average standard deviation and the average of the average scores for each providerid
-		SELECT ProviderID, avg(AMS) AS avrg,  avg(VAR) as avar, sum(AMS) AS sumavg
+		SELECT ProviderID, avg(AMS) - stddev_samp(AMS) AS overall_score
 		FROM
 			(
 				-- Calculate standard deviation and average score for each providerid, measureid tuple
-				SELECT providerid, measureid, stddev_samp(score) AS VAR, avg(score) AS AMS
+				SELECT providerid, measureid, avg(score) AS AMS
 				FROM
 					(
 						-- UNION ALL is used to concatenate data on all the procedures during an initial visit, readmission, or death.
