@@ -3,3 +3,14 @@ Procedures with the greatest variability between hospitals were found by groupin
 Records with NULL or unavailable data were excluded as they are unable to contribute to the analysis.
 
 Given this approach, the ten measures with the most variability between hospitals are:
+MeasureID               Variance
+READM_30_HOSP_WIDE      1969.9541022799654
+READM_30_HIP_KNEE       395.9590347297635
+READM_30_HF             330.52012687437053
+MORT_30_HF              268.2344064874429
+READM_30_COPD           229.99121014581308
+READM_30_PN             223.93428435252451
+READM_30_AMI            214.87832368544755
+MORT_30_PN              210.68814122240187
+MORT_30_COPD            191.4827784306982
+MORT_30_AMI             177.47127472364005
